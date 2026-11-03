@@ -1,8 +1,6 @@
 
 # Spring Boot Learning Journey
 
-My hands-on Java and Spring Boot learning journey.
-
 This repository contains individual Maven projects created
 while learning Spring Framework and Spring Boot.
 
