@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="st1" class="org.example.Student" autowire="constructor">
+
+<!--        constructor is for Parameterized Constructor Value set-->
+
+        <constructor-arg index="0" value="100" />
+        <constructor-arg index="1" value="50" />
+<!--        <constructor-arg index="2" ref="p1" />-->
+
+
+<!--        property is for Setter Injection-->
+
+<!--        <property name="age" value="100" />  -->
+<!--        <property name="rno" value="30" />-->
+<!--        <property name="writer" ref="p1" />-->
+
+    </bean>
+
+    <bean id="st2" class="org.example.Student">
+
+    </bean>
+
+    <bean id="t1" class="org.example.Teacher">
+
+    </bean>
+
+    <bean id="p1" class="org.example.Pen">
+
+    </bean>
+
+    <bean id="ps1" class="org.example.Pencil" >
+
+    </bean>
+
+    <bean id="s1" class="org.example.Sketch" primary="true">
+
+    </bean>
+
+</beans>

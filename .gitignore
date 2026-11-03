@@ -1,0 +1,33 @@
+
+# Maven build output
+**/target/
+
+# IntelliJ IDEA
+.idea/
+**/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse / STS
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# VS Code
+.vscode/
+
+# Build output
+**/build/
+**/dist/
+
+# Logs
+*.log
+
+# Environment files and secrets
+.env
+.env.*
+application-local.properties
+application-local.yml
