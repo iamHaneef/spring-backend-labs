@@ -2,6 +2,7 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
+//@Data - it includes all
 @Setter @Getter
 public class Student {
 

@@ -10,14 +10,14 @@ This repository contains independent Maven projects, each focused on a specific 
 
 The projects are organized in the order I’m learning the concepts.
 
-| Module | Project | Focus |
+| No. | Project | Concepts |
 |---|---|---|
-| 01 | `01-spring-core-xml-config` | IoC, Dependency Injection, and XML-based bean configuration |
-| 02 | `02-java-boilerplate-with-lombok` | Reducing boilerplate code using Lombok annotations |
-| 03 | `03-spring-core-java-config` | IoC, Dependency Injection, and Java-based configuration |
-| 04 | `04-spring-boot-fundamentals` | Spring Boot startup, application context, and auto-configuration |
-| 05 | `05-spring-boot-rest-api` | REST API fundamentals and layered backend architecture |
-
+| 01 | spring-core-xml-config | IoC and Dependency Injection using XML |
+| 02 | java-boilerplate-with-lombok | Lombok annotations and boilerplate reduction |
+| 03 | spring-core-java-config | IoC and Dependency Injection using Java configuration |
+| 04 | spring-boot-fundamentals | Spring Boot fundamentals, IoC and auto-configuration |
+| 05 | spring-boot-rest-api | REST API fundamentals and layered architecture |
+| 06 | spring-boot-rest-crud | CRUD endpoints using GET, POST, PUT and DELETE |
 ---
 
 ## 📚 Concepts & Learning Focus
