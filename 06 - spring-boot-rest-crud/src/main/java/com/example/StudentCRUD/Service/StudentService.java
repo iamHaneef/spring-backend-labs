@@ -16,16 +16,22 @@ public class StudentService {
     public static Student getStudentbyID(int id) {
 
         int index = 0;
+        boolean found = false;
         for(int i = 0 ; i < students.size() ; i++)
         {
             if(students.get(i).getId() == id)
             {
                 index = i;
+                found = true;
+                break;
             }
         }
 
-        return students.get(index);
+        if(!found) return new Student(0 , "" , "");
 
+        else{
+            return students.get(index);
+        }
     }
 
 
@@ -36,5 +42,48 @@ public class StudentService {
 
     public void addStudent(Student student) {
         students.add(student);
+    }
+
+    public String updateStudent(Student student) {
+
+        int index = 0;
+        boolean found = false;
+        for(int i = 0 ; i < students.size() ; i++)
+        {
+            if(students.get(i).getId() == student.getId())
+            {
+                index = i;
+                found = true;
+                break;
+            }
+        }
+        if(!found) return "The ID is Invalid";
+
+        else{
+            students.set(index , student);
+            return "Updation is Successful";
+        }
+    }
+
+    public String deleteStudent(int id) {
+
+        int index = 0;
+        boolean found = false;
+
+        for (int i = 0; i < students.size(); i++) {
+            if(students.get(i).getId() == id)
+            {
+                index = i;
+                found = true;
+                break;
+            }
+        }
+        if(!found) return "The Requested ID is invalid";
+
+        else{
+            students.remove(index);
+            return "The Data is Deleted";
+        }
+
     }
 }

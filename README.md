@@ -10,6 +10,7 @@ This repository contains independent Maven projects, each focused on a specific 
 
 The projects are organized in the order I’m learning the concepts.
 
+
 | No. | Project | Concepts |
 |---|---|---|
 | 01 | spring-core-xml-config | IoC and Dependency Injection using XML |
@@ -18,6 +19,8 @@ The projects are organized in the order I’m learning the concepts.
 | 04 | spring-boot-fundamentals | Spring Boot fundamentals, IoC and auto-configuration |
 | 05 | spring-boot-rest-api | REST API fundamentals and layered architecture |
 | 06 | spring-boot-rest-crud | CRUD endpoints using GET, POST, PUT and DELETE |
+| 07 | spring-boot-jpa-hibernate-crud | Database integration, ORM, JPA, Hibernate and persistent CRUD operations |
+
 ---
 
 ## 📚 Concepts & Learning Focus

@@ -35,6 +35,19 @@ public class StudentController {
         return "Student added successfully";
     }
 
+    //if we need to update the particular user Details
+
+    @PutMapping("students")
+    public String updateStudent(@RequestBody Student student) {
+        return studentService.updateStudent(student);
+    }
+
+    //if we need to Delete the particular user Details
+
+    @DeleteMapping("students/{id}")
+    public String deleteStudent(@PathVariable("id") int id) {
+        return studentService.deleteStudent(id);
+    }
 
 
 }
