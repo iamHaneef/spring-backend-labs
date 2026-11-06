@@ -3,6 +3,7 @@ package com.example.JPADemo.controller;
 import com.example.JPADemo.model.Student;
 import com.example.JPADemo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -61,5 +62,31 @@ public class StudentController {
         return "delete all success";
     }
 
+    //Now we plan to proceed with Declared method by us
+    //try to get student data by department
+
+    @GetMapping("students/department/{depart}")
+    public List<Student> getStudentsByTechnology(@PathVariable("depart") String department) {
+        return studentService.getStudentsByDepartment(department);
+    }
+
+    //try to get student data by gender
+
+    @GetMapping("students/gender/{gender}")
+    public List<Student> getStudentsByGender(@PathVariable("gender") String gender) {
+        return studentService.getStudentsByGender(gender);
+    }
+
+    //we can also bring the native query combinations in spring by sql
+    //try to get student data by gender and Department
+
+    @PostMapping("students/filter")
+    public List<Student> filterStudents(
+            @Param("gender") String gender,
+            @Param("department") String department) {
+
+        return studentService.getStudByGenderAndDepartment(
+                gender, department);
+    }
 
 }
