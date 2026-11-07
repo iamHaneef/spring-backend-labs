@@ -29,4 +29,13 @@ public interface StudentRepo extends JpaRepository<Student,Integer> {
             @Param("department") String department
     );
 
+    //here gender is automatically taken from the table field "tech" and by name too so native query
+
+    @Query(value = "select * from student where name = :name AND department = :department",
+            nativeQuery = true)
+    List<Student> findByNameAndDepartment(
+            @Param("name") String name,
+            @Param("department") String department
+    );
+
 }

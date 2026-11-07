@@ -89,4 +89,13 @@ public class StudentController {
                 gender, department);
     }
 
+    //try to get student data by name and department
+    @GetMapping("students/filters")
+    public List<Student> filterStudentsbyNameAndDepartment(
+            @Param("name") String name,
+            @Param("department") String department) {
+        return studentService.filterStudentsbyNameAndDepartment(name,department);
+    }
+
+
 }
