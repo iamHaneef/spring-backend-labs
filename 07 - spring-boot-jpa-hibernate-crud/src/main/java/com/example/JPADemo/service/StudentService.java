@@ -20,7 +20,7 @@ public class StudentService {
     }
 
     public Student getStudentId(int id) {
-        return studentRepo.findById(id).orElse(new Student());
+        return studentRepo.findById(id).orElse(null);
     }
 
     public void addStudents(Student student) {

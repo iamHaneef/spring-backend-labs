@@ -4,6 +4,8 @@ import com.example.JPADemo.model.Student;
 import com.example.JPADemo.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,19 +25,27 @@ public class StudentController {
         return studentService.getAllStudents();
     }
 
-    //Get Particular Students
+    //Get Particular Students and
+    //Here we also learn the Response Entity of Status Code of HTTP
 
     @GetMapping("students/{id}")
-    public Student getStudentsbyId(@PathVariable int id) {
-        return studentService.getStudentId(id);
+    public ResponseEntity<Student> getStudentsbyId(@PathVariable int id) {
+        Student stud =  studentService.getStudentId(id);
+        //return the output as Response Entity
+
+        if(stud == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        else  return new ResponseEntity<>(stud, HttpStatus.OK);
     }
 
     //create new Students
 
     @PostMapping("students")
-    public String getStudentId(@RequestBody Student student) {
+    public ResponseEntity<String> getStudentId(@RequestBody Student student) {
         studentService.addStudents(student);
-        return "success";
+
+        return new ResponseEntity<>("Student added successfully", HttpStatus.CREATED);
     }
 
     //update the existing student data
