@@ -1,34 +1,59 @@
 
-# Maven build output
+# ==========================================
+# Maven
+# ==========================================
 **/target/
+.mvn/wrapper/maven-wrapper.jar
 
+# ==========================================
 # IntelliJ IDEA
+# ==========================================
 .idea/
 **/.idea/
 *.iml
 *.ipr
 *.iws
 
-# Eclipse / STS
+# ==========================================
+# Eclipse / Spring Tool Suite
+# ==========================================
 .classpath
 .project
 .settings/
 .springBeans
 .sts4-cache
 
+# ==========================================
 # VS Code
+# ==========================================
 .vscode/
 
-# Build output
+# ==========================================
+# Build Output
+# ==========================================
 **/build/
 **/dist/
+**/out/
 
+# ==========================================
 # Logs
+# ==========================================
 *.log
 
-# Environment files and secrets
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
 .env
 .env.*
-application-local.properties
-application-local.yml
+!.env.example
 
+**/application-local.properties
+**/application-local.yml
+**/application-local.yaml
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
