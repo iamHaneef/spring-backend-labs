@@ -20,15 +20,15 @@ Each module focuses on implementing concepts through working code rather than si
 
 ## 🧭 Learning Roadmap
 
-| No. | Module | Concepts | Status |
-|---|---|---|---|
-| 01 | `spring-core-xml-config` | IoC and Dependency Injection using XML | Completed |
-| 02 | `java-boilerplate-with-lombok` | Lombok annotations and boilerplate reduction | Completed |
-| 03 | `spring-core-java-config` | IoC and Dependency Injection using Java configuration | Completed |
-| 04 | `spring-boot-fundamentals` | Spring Boot startup, IoC and auto-configuration | Completed |
-| 05 | `spring-boot-rest-api` | REST API fundamentals and layered architecture | Completed |
-| 06 | `spring-boot-rest-crud` | HTTP methods and CRUD endpoint implementation | Completed |
-| 07 | `spring-boot-jpa-hibernate-crud` | JPA, Hibernate, MySQL and database persistence | In Progress |
-| 08 | `spring-boot-frontend-integration` | Integrating HTML, CSS and JavaScript frontend with Spring Boot REST APIs using HTTP methods | In Progress |
-|09|	`course-registration-system` |	Full-stack application using HTML, CSS, JavaScript, Spring Boot, Spring Web, Spring Data JPA and MySQL	In Progress|
+| No. | Module | Concepts | Status      |
+|---|---|---|-------------|
+| 01 | `spring-core-xml-config` | IoC and Dependency Injection using XML | Completed   |
+| 02 | `java-boilerplate-with-lombok` | Lombok annotations and boilerplate reduction | Completed   |
+| 03 | `spring-core-java-config` | IoC and Dependency Injection using Java configuration | Completed   |
+| 04 | `spring-boot-fundamentals` | Spring Boot startup, IoC and auto-configuration | Completed   |
+| 05 | `spring-boot-rest-api` | REST API fundamentals and layered architecture | Completed   |
+| 06 | `spring-boot-rest-crud` | HTTP methods and CRUD endpoint implementation | Completed   |
+| 07 | `spring-boot-jpa-hibernate-crud` | JPA, Hibernate, MySQL and database persistence | Completed   |
+| 08 | `spring-boot-frontend-integration` | Integrating HTML, CSS and JavaScript frontend with Spring Boot REST APIs using HTTP methods | Completed   |
+|09|	`course-registration-system` |	Full-stack application using HTML, CSS, JavaScript, Spring Boot, Spring Web, Spring Data JPA and MySQL	In Progress| In Progress |
 
