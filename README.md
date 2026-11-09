@@ -30,5 +30,5 @@ Each module focuses on implementing concepts through working code rather than si
 | 06 | `spring-boot-rest-crud` | HTTP methods and CRUD endpoint implementation | Completed |
 | 07 | `spring-boot-jpa-hibernate-crud` | JPA, Hibernate, MySQL and database persistence | In Progress |
 | 08 | `spring-boot-frontend-integration` | Integrating HTML, CSS and JavaScript frontend with Spring Boot REST APIs using HTTP methods | In Progress |
-
+|09|	`course-registration-system` |	Full-stack application using HTML, CSS, JavaScript, Spring Boot, Spring Web, Spring Data JPA and MySQL	In Progress|
 
