@@ -22,7 +22,7 @@ Each module focuses on implementing concepts through working code rather than si
 
 | No. | Module | Concepts | Status      |
 |---|---|---|-------------|
-| 01 | `spring-core-xml-config` | IoC and Dependency Injection using XML | Completed   |
+| 01 | `spring-core-xml-config` | IoC and Dependency Injection using XML | Completed   |    
 | 02 | `java-boilerplate-with-lombok` | Lombok annotations and boilerplate reduction | Completed   |
 | 03 | `spring-core-java-config` | IoC and Dependency Injection using Java configuration | Completed   |
 | 04 | `spring-boot-fundamentals` | Spring Boot startup, IoC and auto-configuration | Completed   |
