@@ -15,7 +15,6 @@ public class Course {
     private int durationInWeeks;
 
 
-
     public Course(String courseId, String courseName, String trainer, int durationInWeeks) {
         this.courseId = courseId;
         this.courseName = courseName;
